@@ -17,5 +17,7 @@ console.log(type5);
 // 6
 let type6 = `Hello ${World+" "+type4}`;
 console.log(type6);
-
+// 7
+let type7 = `console.log(type7)`
+console.log(type7);
 
