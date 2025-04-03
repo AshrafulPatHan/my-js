@@ -1,4 +1,4 @@
-const ashrafulData = require("./asset/sec");
+const ashrafulData = require("./components/sec");
 console.log("hello world");
 
 
