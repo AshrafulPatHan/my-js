@@ -1,5 +1,8 @@
 const ashrafulData = require("./components/sec");
-console.log("hello world");
+
+
+
+console.log(`Hello World `,ashrafulData);
 
 
 
