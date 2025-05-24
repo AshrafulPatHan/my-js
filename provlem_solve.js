@@ -5,5 +5,5 @@ function addition(a, b) {
 };
 addition(3, 2)
 
-
+const aaa = "ash"
 
