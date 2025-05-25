@@ -7,3 +7,4 @@ addition(3, 2)
 
 const aaa = "ash"
 
+console.log(aaa)
