@@ -5,6 +5,8 @@ function addition(a, b) {
 };
 addition(3, 2)
 
-const aaa = "ash"
+const g = "ash"
 
-console.log(aaa)
+console.log(g)
+
+
