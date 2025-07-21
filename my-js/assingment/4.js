@@ -3,23 +3,59 @@
 function calculateTax(income, expenses) {
 // You have to write your code here
     if (income < expenses) {
-        return console.error("The expenses is bigger then income");
+        return "The expenses is bigger then income";
     }else if (income <= 0) {
-        return console.error("The income is small then 0 ");
+        return "The income is small then 0 ";
     }else if (expenses <= 0) {
-        return console.error("The expenses is small then 0");
+        return "The expenses is small then 0";
     }
-    const খরচের_পার্থক = income-expenses;
-    const Tex = খরচের_পার্থক*.20;
-    return Tex
+    function math(income,expenses) {
+       const খরচের_পার্থক = income-expenses;
+        const Tex = খরচের_পার্থক*.20;
+        return Tex 
+    }
+    const TeX = math(income,expenses)
+    return TeX
 }
 
-const pro1 = calculateTax(10, -5 )
+const pro1 = calculateTax(10, 5.55 )
 console.log(pro1);
+
 
 
 // problem 2
 
+function sendNotication(email) {
+// You have to write your code here
+    if (email.indexOf("@") <= 0) {
+        return "Invalid Email";
+    }else if (email.indexOf(".") <= 0){
+        return "Invalid Email";
+    }
+    function send(email) {
+        const array = email.split("@");
+        let name = array[0]
+        let web = array[1]
+        
+        const data = name+"sent you an email from"+web;
+        return data ;
+    }
+    return send(email);
+}
+
+
+let email = "ashraful@gmail.com"
+const pro2 = sendNotication(email)
+console.log(pro2);
+
+// sudo
+const data = "split@ok.com"
+const ok = data.split("@") // [ 'split', 'ok.com' ]
+console.log(ok);
+const em = "split@ok.com"
+
+const okem = data.indexOf("k") // 7
+console.log(okem);
 
 
 
