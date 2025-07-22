@@ -88,6 +88,15 @@ console.log(Myname);
 
 function calculateFinalScore(obj) {
 //write your code here
+
+    // cake the object is true of false
+    if (typeof obj.testScore === "number" | typeof obj.name === "string" | typeof obj.schoolGrade === "number" ) {
+        console.log(" ");
+        
+    }else{
+        return "Invalid Input";
+    }
+
     // set variable
     let Profession;
     let TestScore = obj.testScore;
@@ -95,7 +104,7 @@ function calculateFinalScore(obj) {
     let SchoolGrade = obj.schoolGrade;
 
     // cake is farmer
-    if (IsFFamily === true) {
+    if ( IsFFamily === true ) {
         Profession = 20;
     }
     else{
@@ -120,7 +129,9 @@ function calculateFinalScore(obj) {
     }
 }
 
-const NetData = { name: "Rajib", testScore: 45, schoolGrade: 25, isFFamily : true }
+let NetData = { name: "Rajib", testScore: 45, schoolGrade: 25, isFFamily : true }
+// NetData = "hello"
+
 console.log(calculateFinalScore(NetData));
 
 
