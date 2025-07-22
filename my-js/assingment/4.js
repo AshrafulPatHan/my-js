@@ -90,7 +90,7 @@ function calculateFinalScore(obj) {
 //write your code here
 
     // cake the object is true of false
-    if (typeof obj.testScore === "number" | typeof obj.name === "string" | typeof obj.schoolGrade === "number" ) {
+    if ( typeof obj.name === "string" & typeof obj.testScore === "number" & typeof obj.schoolGrade === "number" ) {
         console.log(" ");
         
     }else{
@@ -134,4 +134,42 @@ let NetData = { name: "Rajib", testScore: 45, schoolGrade: 25, isFFamily : true 
 
 console.log(calculateFinalScore(NetData));
 
+// problem 5
 
+function waitingTime(waitingTimes , serialNumber) {
+// You have to write your code here
+
+    // Input validation
+    if (typeof waitingTimes === "string") {
+        return "Invalid Input"
+    }
+    else if (typeof waitingTimes.length === "number" & typeof serialNumber === "number" ) {
+    console.log(" ");
+        // set variable
+        let Time = waitingTimes;
+        let Serial = serialNumber - 1 ;
+        let interviewer = Time.length;
+
+        // calculate the average number
+        function এভারেজ(Time) {
+            const sum = Time.reduce((a, b) => a + b, 0);
+            const average = sum / interviewer;
+            console.log({sum,average});
+            
+            return average
+        }
+        const TheAverageTime = এভারেজ(Time);
+
+        // return the result
+        let netPeople =  Serial - interviewer ;
+        let netTime = netPeople*TheAverageTime;
+        console.log({Serial,interviewer,TheAverageTime,netPeople,netTime});
+        
+        return netTime
+    }else {
+        return "Invalid Input"
+    }
+}
+
+let WaitingTime = waitingTime([13, 2], 6)
+console.log(WaitingTime);
