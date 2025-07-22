@@ -48,14 +48,43 @@ let email = "ashraful@gmail.com"
 const pro2 = sendNotication(email)
 console.log(pro2);
 
-// sudo
-const data = "split@ok.com"
-const ok = data.split("@") // [ 'split', 'ok.com' ]
-console.log(ok);
-const em = "split@ok.com"
+// sudo code --
+// const data = "split@ok.com"
+// const ok = data.split("@") // [ 'split', 'ok.com' ]
+// console.log(ok);
+// const em = "split@ok.com"
 
-const okem = data.indexOf("k") // 7
-console.log(okem);
+// const oem = data.indexOf("k") // 7
+// console.log(oem);
+// ---
+
+// problem 3
+
+function checkDigitsInName(name) {
+//write your code here
+    if (typeof name === "string") {
+        const nameRegex = /^[a-zA-Z\s-]+$/; 
+        let data = nameRegex.test(name);
+        return !data;
+    }
+    return "Invalid Input"
+}
+
+const nameData = "true";
+let Myname = checkDigitsInName(nameData)
+console.log(Myname);
+
+// sudo code ---
+// if (typeof "a" === "string") {
+//     console.log("the data is string");
+    
+// }else{
+//     console.log("the data is something else");
+    
+// }
+// ----
+
+// problem 4
 
 
 
