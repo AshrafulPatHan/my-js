@@ -86,5 +86,41 @@ console.log(Myname);
 
 // problem 4
 
+function calculateFinalScore(obj) {
+//write your code here
+    // set variable
+    let Profession;
+    let TestScore = obj.testScore;
+    let IsFFamily = obj.isFFamily;
+    let SchoolGrade = obj.schoolGrade;
+
+    // cake is farmer
+    if (IsFFamily === true) {
+        Profession = 20;
+    }
+    else{
+        Profession = 0;
+    }
+
+    // log the data
+    console.log({ Profession, TestScore, SchoolGrade , IsFFamily });
+    
+    // sum the data
+    function Calculate(Profession,TestScore,SchoolGrade) {
+        const sum = Profession + TestScore + SchoolGrade ;
+        return sum
+    }
+    const sumData =  Calculate(Profession,TestScore,SchoolGrade);
+
+    // return the result on server
+    if (sumData >= 80) {
+        return true
+    } else{
+        return false
+    }
+}
+
+const NetData = { name: "Rajib", testScore: 45, schoolGrade: 25, isFFamily : true }
+console.log(calculateFinalScore(NetData));
 
 
