@@ -37,7 +37,7 @@ function sendNotication(email) {
         let name = array[0]
         let web = array[1]
         
-        const data = name+"sent you an email from"+web;
+        const data = name+" sent you an email from "+web;
         return data ;
     }
     return send(email);
@@ -154,7 +154,7 @@ function waitingTime(waitingTimes , serialNumber) {
         function এভারেজ(Time) {
             const sum = Time.reduce((a, b) => a + b, 0);
             const average = sum / interviewer;
-            console.log({sum,average});
+            // console.log({sum,average});
             
             return average
         }
@@ -163,7 +163,7 @@ function waitingTime(waitingTimes , serialNumber) {
         // return the result
         let netPeople =  Serial - interviewer ;
         let netTime = netPeople*TheAverageTime;
-        console.log({Serial,interviewer,TheAverageTime,netPeople,netTime});
+        // console.log({Serial,interviewer,TheAverageTime,netPeople,netTime});
         
         return netTime
     }else {
